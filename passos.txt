@@ -1,0 +1,5 @@
+Configurando o Git
+git config --global user.name Pedroohsn
+git config --global user.email henriquepedro2610@outlook.com
+git clone https://github.com/Pedroohsn/curriculo-simples
+
