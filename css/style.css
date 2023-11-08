@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', 'sans-serif';
+    color: gainsboro;
+}
+
+body{
+    background-color: #001e55;
+
+}
+
+ul{
+    list-style: none;
+}
+
+main{
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: 30% 1fr; /*Aqui voce coloca quantas colunas e qual o tamanho*/
+    grid-gap: 1rem;
+}
+
+@media (max-width: 880px){
+    main{
+        grid-template-columns: 1fr;
+    }
+}
