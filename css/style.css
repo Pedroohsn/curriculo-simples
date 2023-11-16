@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+:root{
+    --base-color: #015AA5;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -18,14 +22,131 @@ ul{
 }
 
 main{
-    margin: 1rem;
+    margin: 1rem; /*16px*/
     display: grid;
     grid-template-columns: 30% 1fr; /*Aqui voce coloca quantas colunas e qual o tamanho*/
     grid-gap: 1rem;
 }
 
-@media (max-width: 880px){
+@media (max-width: 1120px){
     main{
         grid-template-columns: 1fr;
     }
+}
+
+.left{
+    background-color: #005aa5;
+    box-shadow: 0.3rem 0.3rem 0.9rem #049ef1;
+}
+
+.left-image{
+    position: relative;
+}
+
+.left-image img{
+    width: 100%;
+    /*transform: rotateY(180deg);Inverte a imagem*/ 
+}
+
+.left-image h1{
+    position:absolute;
+    bottom: 1rem;
+    color: var(--base-color);
+    width: 100%;
+    text-align: center;
+    background-color: black;
+}
+
+i{
+    color:#ffff;
+}
+
+.personal, .skills, .languages{
+    padding: 1rem;
+    line-height: 2rem;
+}
+
+.personal{
+    font-size: 1.1rem;
+}
+
+progress{
+    width: 100%;
+    height: 1.8rem;
+}
+
+.experience, .education{
+    padding: 1.5rem;
+    background-color: #005aa5;
+    box-shadow: 0.3rem 0.3rem 0.9rem #049ef1;
+}
+
+.education{
+    margin-bottom: 1rem;
+}
+
+.job{
+    margin: 1.5rem 0;
+}
+
+.job-name{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.experience p, .education p{
+    margin-top: 0.5rem;
+    line-height: 1.5rem;
+    text-align: justify;
+}
+
+.date{
+    color: #001e55;
+}
+
+.date span{
+    background-color: #001e55;
+    color: white;
+    padding: 0.4rem;
+    border-radius: 5px;
+}
+
+footer{
+    background-color: var(--base-color);
+    padding: 1.5rem;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+footer p {
+    color: white;
+    margin-top: 0.5rem;
+    font-size: 2rem;
+}
+
+footer i{
+    color: white;
+    font-size: 2rem;
+    margin-top: 0.5rem;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+.progress{
+    display: inline-block;
+    width: 100%;
+    height: 1rem;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.bar{
+    border-radius: 20px;
+    height: 100%;
+    transition: widht;
+    transition-duration: 1s;
+    background-color: #049ef1;
+    box-shadow: 0 45px 50px rgba(0, 0, 0, 0.25);
 }
